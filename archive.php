@@ -30,28 +30,6 @@ do_action( 'before_the_main_loop' ); ?>
 			<div class="grid-container content-wrapper">
 
 				<div class="grid-x grid-padding-x">
-					<!-- BLOCK LATEST NEWS -->
-					<div class="cell HeroSlider medium-order-2 mt16">
-						<div class="grid-x align-justify scrolling-wrapper-flexbox">
-							
-							<?php 
-						// get last 4 articles 
-							$options = array(
-								'post_type' => array('post'),
-								'posts_per_page' => '4' ,
-								'post_status' => 'publish',
-							);
-							$exclude_ids = [];
-							$theQuery = new WP_Query($options);
-							if ($theQuery->have_posts()) {
-								while ( $theQuery->have_posts() ) : $theQuery->the_post();
-									$exclude_ids[] = get_the_ID();
-									get_template_part( 'template-parts/content-grid', get_post_format() );
-								endwhile;
-							}
-							?>
-						</div>
-					</div>
 					<div class="cell mt16 medium-order-4">
 						<div class="grid-x grid-padding-x">
 							<div class="cell medium-7 large-8">
@@ -68,10 +46,6 @@ do_action( 'before_the_main_loop' ); ?>
 								$main_loop_i = 0;
 
 								while ( have_posts() ) : the_post();
-									if( in_array(get_the_ID(), $exclude_ids) ) { 
-										$main_loop_i++;
-										continue;
-									}
 									do_action( 'the_main_loop', $main_loop_i );
 
 									get_template_part( 'template-parts/content', get_post_format() );

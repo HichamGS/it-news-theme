@@ -1,0 +1,96 @@
+/**
+ * All of the CSS for your dashboard-specific functionality should be
+ * included in this file.
+ */
+
+#kamino_event_meta_metabox .inside,
+#kamino_event_form_meta_metabox .inside{ padding:0; margin:0;}
+
+#kamino_event_meta_metabox .handlediv,
+#kamino_event_form_meta_metabox .handlediv{color:#fff;}
+
+#kamino_event_meta_metabox h3.hndle,
+#kamino_event_form_meta_metabox h3.hndle{background-color: #0D99B7; color:#fff; font-weight: bold; }
+
+#kamino_event_meta_metabox .half,
+#kamino_event_form_meta_metabox .half{ float:left; width:50%;padding: 0 10px 15px; box-sizing: border-box; ms-box-sizing: border-box; webkit-box-sizing: border-box;  moz-box-sizing: border-box;}
+#kamino_event_meta_metabox .clear,
+#kamino_event_form_meta_metabox .clear{ clear:both;}
+
+#kamino_event_form_meta_metabox .half{ padding:0;}
+#kamino_event_form_meta_metabox .half h3{ padding:12px 20px;border-bottom: 1px solid #cccccc; text-align:center; }
+#kamino_event_form_meta_metabox .half.first{ border-right: 1px solid #cccccc;}
+
+.event_meta_control .box{ border-bottom: 1px solid #cccccc; padding: 12px 20px 20px;}
+.event_meta_control .box h4{ color:#999; font-size:1em; margin:0 0 15px 0; text-transform:uppercase; }
+.event_meta_control .box p{ margin: 0 0 10px 0;}
+.event_meta_control .box label{ display:block; font-weight:bold; margin:-2px 6px 6px 0; margin-bottom:0; }
+.event_meta_control .box label span{ display:inline; font-weight:normal; }
+.event_meta_control .box textarea, .event_meta_control .box input[type='text']{
+    border:1px solid #CECECE; width:70%; background-color:#FFF; color:#696969; padding:8px 15px 10px;
+}
+
+#kamino_event_form_meta_metabox .event_meta_control .box textarea, .event_meta_control .box input[type='text']{ width:100%;}
+
+.event_meta_control .box input[type='text']:disabled{background-color:#F4F4F1; color:#696969;}
+.event_meta_control .box .wpa_group h4{ margin-left:-20px; }
+.event_meta_control .box .wpa_group{ padding: 16px 20px; margin-bottom: 16px}
+.event_meta_control .box .button-primary{
+    background-color:#0D99B7; border:none;border-bottom:2px solid #0A9DA7; text-transform: uppercase;
+    padding:8px 25px; font-weight:bold; height:auto;
+}
+.event_meta_control .box .handlediv{ color:#0D99B7!important; width: 20px;height: 36px;padding: 8px 10px 7px;}
+.event_meta_control .box .handlediv:before{text-align:center;}
+.event_meta_control .box .handlediv.off{
+    -moz-transform:rotate(180deg); -webkit-transform:rotate(180deg); -o-transform:rotate(180deg);
+}
+
+.event_meta_control .thumbnail{margin-bottom: 20px;}
+.event_meta_control .thumbnail a.thickbox{ border: 4px dashed #DDD; width: 100%;max-width:100%;height:auto;max-height:350px; display: block;padding:40px 0; text-decoration:none;text-align:center;}
+.event_meta_control .thumbnail a.thickbox:before{content:"Select Files"; border-radius: 3px;  color:#AAA; padding: 4px 10px 6px; border: 1px solid #CCC; background-color:#F7F7F7;}
+.event_meta_control .thumbnail a.thickbox:hover:before{ color:#555; border: 1px solid #A1A1A1; background-color:#FAFAFA;}
+.event_meta_control .thumbnail a img{ max-width:100%;}
+
+.event_meta_control .wpa_group-kamino_events{ border: 1px solid #E3E3E3; width: 40%; float:left; margin-right: 5px;background-color:#F1F1F1;}
+
+.event_meta_control .wpa_group-kamino_events .wpa_event_title,
+.event_meta_control .wpa_group-kamino_events .wpa_event_link,
+.event_meta_control .wpa_group-kamino_events .wpa_event_date,
+.event_meta_control .wpa_group-kamino_events .wpa_event_time,
+.event_meta_control .wpa_group-kamino_events .wpa_event_manager,
+.event_meta_control .wpa_group-kamino_events .wpa_event_image,
+.event_meta_control .wpa_group-kamino_events .wpa_event_company{ margin: 0 0 5px 0; float: left; width: 100%;  }
+
+.event_meta_control .wpa_group-kamino_events .wpa_job_name input[type="text"],
+.event_meta_control .wpa_group-kamino_events .wpa_event_title input[type="text"],
+.event_meta_control .wpa_group-kamino_events .wpa_event_link input[type="text"],
+.event_meta_control .wpa_group-kamino_events .wpa_event_date input[type="text"],
+.event_meta_control .wpa_group-kamino_events .wpa_event_time input[type="text"],
+.event_meta_control .wpa_group-kamino_events .wpa_event_manager input[type="text"],
+.event_meta_control .wpa_group-kamino_events .wpa_event_company input[type="text"]{ width:100%; }
+
+.event_meta_control .docopy-kamino_events
+    background-color:#0D99B7; border:none;border-bottom:2px solid #0C8199; text-transform: uppercase;
+    padding:8px 25px; font-weight:bold; height:auto;
+}
+
+.event_meta_control #partner .partner-title{margin-bottom: 20px}
+
+.event_meta_control .wpa_footer{text-align:center;}
+
+#wpa-warning,#wpa-warning2, #wpa-warning3{
+    display: none; background:lightYellow; border:1px solid #E6DB55; padding:5px;"
+}
+
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { float: left; clear:left; padding: 0 0 0 5px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 45%; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; padding: 0 5px 0 0; }
+.ui-timepicker-rtl dl dt{ float: right; clear: right; }
+.ui-timepicker-rtl dl dd { margin: 0 45% 10px 10px; }

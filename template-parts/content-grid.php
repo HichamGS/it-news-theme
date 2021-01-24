@@ -1,6 +1,6 @@
 <div class="cell">
 	<?php if( get_comments_number(get_the_ID()) > 0 ) { ?>
-		<span class="hero-comments-count"><?php comments_number() ; ?></span>
+		<span class="hero-comments-count"><?php echo get_comments_number(get_the_ID()) ; ?></span>
 	<?php } ?> 
 	<a href="<?php the_permalink(); ?>" data-datalayer="heroTop" class="flex-container align-bottom">
 		<picture class="heroTop">

@@ -5,7 +5,7 @@
 		</picture>
 	</a>
 	<div class="cell auto post-infos">
-		<a href="<?php the_permalink(); ?>" class="post-comments-count"><?php comments_number(); ?></a>
+		<?php if( get_comments_number(get_the_ID()) > 0 ) { ?><a href="<?php the_permalink(); ?>" class="post-comments-count"><?php echo get_comments_number(get_the_ID()); ?></a><?php } ?>
 		<a href="<?php the_permalink(); ?>" data-vr-excerpttitle=""><?php the_title(); ?></a>
 		<?php the_excerpt(); ?>
 		<div class="grid-x align-justify">
